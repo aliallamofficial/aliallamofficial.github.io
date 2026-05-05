@@ -25,7 +25,7 @@
 
 🔗 **روابط التحقق:**
 - [الموقع الرسمي الموثق](https://aliallamofficial.github.io)
-- - [المفتاح العام (Public Key)](ali_key.txt)
+  - [المفتاح العام (Public Key)](ali_key.txt)
 
 <p align="center">
   <small>SIGNED WITH KEY: 55392380FBF1C8F1</small>
