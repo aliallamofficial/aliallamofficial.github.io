@@ -12,9 +12,9 @@
 
 ### 🛡️ الهوية الرقمية الموثقة
 هذا الحساب موثق تقنياً باستخدام نظام تشفير PGP العالمي.
-- **Key ID:** `55392380FBF1C8F1`
-- **Fingerprint:** `CBD0 EE2B 3BED 49C8 9365 EAA6 5539 2380 FBF1 C8F1`
-- **Email:** `Shholm6847@gmail.com`
+*   **Key ID:** `55392380FBF1C8F1`
+*   **Fingerprint:** `CBD0 EE2B 3BED 49C8 9365 EAA6 5539 2380 FBF1 C8F1`
+*   **Email:** `prof.ali.hatem.cairo@gmail.com`
 
 ---
 
