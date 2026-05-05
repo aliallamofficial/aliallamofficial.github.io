@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/aliallamofficial.png" width="150" style="border-radius: 50%;" />
-  
-  # على حاتم علام <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" width="25" height="25" />
+
+  <h1>على حاتم علام <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" width="22" height="22" style="display: inline; vertical-align: middle;" /></h1>
 
   **منشئ محتوى رقمي وباحث تقني**
 
@@ -25,7 +25,7 @@
 
 🔗 **روابط التحقق:**
 - [الموقع الرسمي الموثق](https://aliallamofficial.github.io)
-  - [المفتاح العام (Public Key)](ali_key.txt)
+- [المفتاح العام (Public Key)](ali_key.txt)
 
 <p align="center">
   <small>SIGNED WITH KEY: 55392380FBF1C8F1</small>
