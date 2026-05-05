@@ -1,10 +1,14 @@
-# Hi, I'm Ali Hatem Allam 👋
+<div align="center">
+  <img src="https://github.com/aliallamofficial.png" width="150" style="border-radius: 50%;" />
+  
+  # على حاتم علام <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" width="25" height="25" />
 
-<p align="left">
-  <img src="https://img.shields.io/badge/GPG-Verified-blue?style=for-the-badge&logo=gnupg&logoColor=white" />
-  <img src="https://img.shields.io/badge/Identity-Verified-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Verified_Identity-Blue?style=for-the-badge&logo=checkmarx&logoColor=white" />
-</p>
+  **منشئ محتوى رقمي وباحث تقني**
+
+  [![GPG Verified](https://img.shields.io/badge/GPG-Verified-blue?style=flat-square&logo=gnupg&logoColor=white)](https://github.com/aliallamofficial)
+  
+  ---
+</div>
 
 ### 🛡️ الهوية الرقمية الموثقة
 هذا الحساب موثق تقنياً باستخدام نظام تشفير PGP العالمي.
@@ -23,4 +27,6 @@
 - [الموقع الرسمي الموثق](https://aliallamofficial.github.io)
 - [المفتاح العام (Public Key)](https://github.com/aliallamofficial/aliallamofficial/blob/main/ali_key.txt)
 
----
+<p align="center">
+  <small>SIGNED WITH KEY: 55392380FBF1C8F1</small>
+</p>
