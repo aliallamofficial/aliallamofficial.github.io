@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://github.com/aliallamofficial.png" width="150" style="border-radius: 50%;" />
-  
-  # على حاتم علام <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg" width="25" height="25" />
+
+  <h1>على حاتم علام <img src="https://raw.githubusercontent.com/aliallamofficial/aliallamofficial/main/blue_check.png" width="22" height="22" style="display: inline-block; vertical-align: middle;" /></h1>
 
   **منشئ محتوى رقمي وباحث تقني**
 
