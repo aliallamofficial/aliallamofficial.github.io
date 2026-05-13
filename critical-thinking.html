@@ -16,7 +16,23 @@
         .content { font-size: 1.1rem; }
         .point { background: #334155; padding: 15px; border-right: 5px solid #fbbf24; margin: 20px 0; border-radius: 5px; }
         .back-btn { display: inline-block; margin-top: 30px; color: #38bdf8; text-decoration: none; font-weight: bold; }
-        .signature { margin-top: 50px; font-style: italic; color: #64748b; border-top: 1px dashed #475569; pt: 20px; }
+        .signature { margin-top: 50px; font-style: italic; color: #64748b; border-top: 1px dashed #475569; padding-top: 20px; }
+
+        /* تنسيقات قسم التحدي الجديد */
+        .challenge-section {
+            background: #0f172a;
+            padding: 25px;
+            border-radius: 15px;
+            margin-top: 40px;
+            border: 1px solid #38bdf8;
+        }
+        .challenge-title { color: #38bdf8; margin-top: 0; display: flex; align-items: center; gap: 10px; }
+        .code-block { background: #1e293b; padding: 15px; border-radius: 10px; color: #a5f3fc; font-size: 0.85rem; direction: ltr; overflow-x: auto; margin: 15px 0; border-left: 3px solid #38bdf8; }
+        .input-group { display: flex; gap: 10px; margin-top: 15px; }
+        .challenge-input { padding: 10px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: white; flex-grow: 1; }
+        .challenge-btn { padding: 10px 20px; background: #38bdf8; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; color: #0f172a; transition: 0.3s; }
+        .challenge-btn:hover { background: #7dd3fc; }
+        #challengeResult { margin-top: 15px; font-weight: bold; font-size: 0.9rem; }
     </style>
 </head>
 <body>
@@ -45,6 +61,36 @@
             <p>كيف توازنون بين "سرعة الإنجاز" التي يوفرها الذكاء الاصطناعي وبين "عمق الفهم"؟ هل تضعون قوانين لأنفسكم قبل سؤال البوت؟</p>
         </div>
 
+        <!-- بداية قسم خوارزمية التحدي -->
+        <div class="challenge-section">
+            <h3 class="challenge-title">
+                🚀 تحدي التفكير النقدي للمبرمجين
+            </h3>
+            <p style="font-size: 0.9rem; color: #94a3b8;">
+                بصفتك باحثاً تقنياً، هل يمكنك اكتشاف "الثغرة المنطقية" في هذا الكود البسيط الذي يحاكي نظام حماية؟ (حاول الحل بدون مساعدة الذكاء الاصطناعي!)
+            </p>
+            
+            <div class="code-block">
+function verifyAccess(userCode) {
+    let masterKey = "55392380"; 
+    // التحدي: هناك خطأ فادح في السطر القادم
+    if (userCode = masterKey) { 
+        return "تم السماح بالدخول!";
+    } else {
+        return "كود خاطئ، تم حظر المحاولة.";
+    }
+}
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="userInput" class="challenge-input" placeholder="أدخل أي كود عشوائي لاختباره">
+                <button onclick="testChallenge()" class="challenge-btn">اختبار الكود</button>
+            </div>
+            
+            <p id="challengeResult"></p>
+        </div>
+        <!-- نهاية قسم خوارزمية التحدي -->
+
         <div class="signature">
             تم توثيق هذا المحتوى تقنياً بواسطة مفتاح GPG الخاص بالباحث.<br>
             ID: 55392380FBF1C8F1
@@ -52,6 +98,26 @@
 
         <a href="index.html" class="back-btn">← العودة للصفحة الرئيسية</a>
     </div>
+
+    <script>
+        function testChallenge() {
+            let val = document.getElementById('userInput').value;
+            let res = document.getElementById('challengeResult');
+            
+            if (val === "") {
+                res.style.color = "#f87171";
+                res.innerText = "يرجى إدخال أي قيمة أولاً.";
+                return;
+            }
+
+            // محاكاة الخطأ المنطقي (استخدام = بدلاً من ==)
+            // في الحقيقة، هذا السطر سيجعل الشرط True دائماً
+            if (val = "55392380") { 
+                res.style.color = "#4ade80";
+                res.innerText = "⚠️ النتيجة: تم السماح بالدخول! هل لاحظت أن النظام قبلك رغم أنك لم تدخل الكود الصحيح؟ هذا بسبب استخدام '=' (تخصيص) بدلاً من '==' (مقارنة). هذا هو الفرق بين النسخ واللصق وبين التفكير النقدي!";
+            }
+        }
+    </script>
 
 </body>
 </html>
