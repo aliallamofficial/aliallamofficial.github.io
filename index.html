@@ -1,102 +1,175 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
+    <meta name="google-site-verification" content="L3tPSb-jmutxmhHwf_FTcPCVK69TdAetKEoSoTS7JME" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>على حاتم علام | باحث تقني</title>
+    
+    <!-- كود الـ Schema لتوثيق الهوية -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "على علام",
+      "alternateName": ["على حاتم علام", "Ali Hatem Allam"],
+      "url": "https://aliallamofficial.github.io",
+      "image": "https://avatars.hsoubcdn.com/5ada6445dd1af161d0d75108289ad7b1?s=256",
+      "sameAs": [
+        "https://aliallamofficial.github.io",
+        "https://sites.google.com/view/aliallamofficial",
+        "https://www.facebook.com/aliallamofficial",
+        "https://mostaql.com/u/aliallam_ofcl",
+        "https://io.hsoub.com/u/aliallamofficial",
+        "https://www.linkedin.com/in/aliallamofficial",
+        "https://developers.google.com/profile/u/aliallamofficial",
+        "https://crunchbase.com/person/ali-allam-0d68"
+      ],
+      "jobTitle": "Technical Researcher",
+      "description": "منشئ محتوى رقمي وباحث تقني."
+    }
+    </script>
+
     <style>
         body {
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         }
 
         .card {
             background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             text-align: center;
             max-width: 400px;
-            width: 90%;
+            width: 85%;
+            position: relative;
+        }
+
+        /* شارة Verified الاحترافية */
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #238636;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .profile-img {
-            width: 110px;
-            height: 110px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
-            margin-bottom: 15px;
-            border: 3px solid #007bff;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 10px;
+            object-fit: cover;
         }
 
-        h1 { font-size: 1.5rem; color: #333; margin-bottom: 5px; }
-        .handle { color: #007bff; font-weight: bold; margin-bottom: 20px; display: block; }
-
-        .btn-container {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+        .profile-img:hover {
+            transform: scale(1.05);
         }
+
+        h1 { color: #2d3436; margin: 10px 0; font-size: 1.8rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
+        
+        /* علامة الاختيار الصغيرة بجانب الاسم */
+        .name-check {
+            fill: #2088ff;
+            width: 20px;
+            height: 20px;
+        }
+
+        p { color: #636e72; line-height: 1.6; margin-bottom: 25px; }
 
         .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            display: inline-block;
             text-decoration: none;
-            padding: 12px;
-            border-radius: 12px;
-            font-weight: 600;
-            transition: 0.3s;
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+            margin-bottom: 12px;
+            width: 80%;
         }
 
-        /* زر المقالات المميز */
+        .btn:hover {
+            background: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+        }
+
+        /* تنسيق خاص لزر المقالات لتمييزه */
         .btn-articles {
             background: #2d3436;
-            color: white;
-            border: none;
+            box-shadow: 0 4px 15px rgba(45, 52, 54, 0.3);
+            margin-bottom: 20px;
         }
 
         .btn-articles:hover {
             background: #000;
-            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
         }
 
-        .btn-portfolio {
-            background: #007bff;
-            color: white;
+        .gpg-info {
+            font-size: 10px;
+            color: #a0a0a0;
+            font-family: monospace;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
         }
-
-        .btn-portfolio:hover {
-            opacity: 0.9;
-            transform: translateY(-2px);
-        }
-
-        .icon { width: 20px; height: 20px; fill: currentColor; }
     </style>
 </head>
 <body>
 
     <div class="card">
-        <img src="https://avatars.hsoubcdn.com/5ada6445dd1af161d0d75108289ad7b1?s=256" alt="علي حاتم علام" class="profile-img">
-        <h1>على حاتم علام</h1>
-        <span class="handle">@aliallamofficial</span>
+        <!-- شارة التحقق العلوية -->
+        <div class="verified-badge">
+            <svg style="width:12px; height:12px; margin-left:5px" viewBox="0 0 24 24" fill="white">
+                <path d="M12,2L4.5,20.29L5.21,21L12,18L18.79,21L19.5,20.29L12,2Z" />
+            </svg>
+            هوية رقمية موثقة GPG
+        </div>
 
-        <div class="btn-container">
-            <!-- زر الانتقال للمقالات -->
-            <a href="https://aliallamofficial.github.io/critical-thinking.html" class="btn btn-articles">
-                <svg class="icon" viewBox="0 0 24 24"><path d="M19,5V19H5V5H19M19,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M14,17H7V15H14V17M17,13H7V11H17V13M17,9H7V7H17V9Z"/></svg>
-                تصفح المقالات التقنية
-            </a>
+        <img src="https://avatars.hsoubcdn.com/5ada6445dd1af161d0d75108289ad7b1?s=256" 
+             alt="على حاتم علام" class="profile-img">
+        
+        <h1>
+            على حاتم علام
+            <!-- أيقونة التحقق بجانب الاسم مباشرة -->
+            <svg class="name-check" viewBox="0 0 24 24">
+                <path d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />
+            </svg>
+        </h1>
+        
+        <p>منشئ محتوى رقمي وباحث تقني</p>
+        
+        <a href="https://sites.google.com/view/aliallamofficial" class="btn">
+            عرض معرض الأعمال الكامل
+        </a>
 
-            <!-- زر معرض الأعمال -->
-            <a href="https://sites.google.com/view/aliallamofficial" class="btn btn-portfolio">
-                معرض الأعمال والخدمات
-            </a>
+        <!-- زر المقالات الجديد -->
+        <a href="https://aliallamofficial.github.io/articles" class="btn btn-articles">
+            تصفح المقالات التقنية
+        </a>
+
+        <!-- معلومات المفتاح التقنية لزيادة الاحترافية -->
+        <div class="gpg-info">
+            SIGNED WITH KEY: 55392380FBF1C8F1
         </div>
     </div>
 
